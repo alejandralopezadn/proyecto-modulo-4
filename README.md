@@ -25,6 +25,14 @@ El proyecto utilizará las siguientes capas:
 - Utils
 - Tests
 
+## Modelos de dominio
+
+A la carpeta de la arquitectura de models, en esta versión le agregamos modelos de dominio con POO
+
+- Usuario
+- Cuenta
+- Movimiento
+
 ## Funcionalidades previstas
 
 Durante las siguientes versiones se desarrollarán:
@@ -46,4 +54,4 @@ Durante las siguientes versiones se desarrollarán:
 
 ## Versión actual
 
-v0.2.0 — Arquitectura modular y utilidades base.
+v0.3.0 — Modelado del dominio con Programación Orientada a Objetos.
