@@ -32,6 +32,18 @@ A la carpeta de la arquitectura de models, en esta versión le agregamos modelos
 - Usuario
 - Cuenta
 - Movimiento
+- Banco
+
+## Responsabilidades
+
+Dentro del modelo de banco, se agregaron nuevas funcionalidades entre las cuales se encuentran las siguientes
+
+- Agregae usuarios
+- Buscar usuarios
+- Agregar cuentas
+- Buscar una cuenta o un usuario
+- Registrar los movimientos
+- Realizar depositos
 
 ## Funcionalidades previstas
 
@@ -54,4 +66,4 @@ Durante las siguientes versiones se desarrollarán:
 
 ## Versión actual
 
-v0.3.0 — Modelado del dominio con Programación Orientada a Objetos.
+v0.5.0 — Persistencia con LocalStorage y StorageService.
