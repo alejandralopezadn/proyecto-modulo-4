@@ -1,0 +1,171 @@
+/* =========================================
+   PALETA DE COLORES
+========================================= */
+:root {
+  --color-1: #eedfd7;
+  --color-2: #e6eed7;
+  --color-3: #d7e6ee;
+  --color-4: #dfd7ee;
+}
+
+/* =========================================
+   PÁGINA DE TRANSFERENCIAS
+========================================= */
+.app-transferencia {
+  min-height: 100vh;
+  background-color: var(--color-3);
+}
+
+.transferencia-content {
+  width: min(1100px, 92%);
+  margin: 32px auto;
+}
+
+/* =========================================
+   ENCABEZADO DE OPERACIONES
+========================================= */
+.transferencia-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+  padding: 28px;
+  background-color: var(--color-1);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.transferencia-header h2 {
+  margin: 6px 0;
+  color: #374151;
+}
+
+.transferencia-header p {
+  color: #6b7280;
+}
+
+/* =========================================
+   SALDO DISPONIBLE
+========================================= */
+.saldo-disponible {
+  min-width: 220px;
+  padding: 18px;
+  background-color: var(--color-2);
+  border-radius: 12px;
+  border: 1px solid var(--color-4);
+}
+
+.saldo-disponible span {
+  display: block;
+  margin-bottom: 8px;
+  color: #3f6545;
+  font-size: 0.9rem;
+}
+
+.saldo-disponible strong {
+  font-size: 1.6rem;
+  color: #374151;
+}
+
+/* =========================================
+   FORMULARIOS DE OPERACIONES
+========================================= */
+.operaciones-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.4fr)
+    minmax(280px, 0.8fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.transferencia-card {
+  padding: 28px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-4);
+}
+
+.transferencia-card:nth-child(2) {
+  background-color: var(--color-4);
+}
+
+.transferencia-card h3 {
+  margin-bottom: 22px;
+  color: #374151;
+}
+
+/* =========================================
+   CAMPOS DEL FORMULARIO
+========================================= */
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-4);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group select:focus {
+  outline: 2px solid var(--color-4);
+  border-color: transparent;
+}
+
+.form-group select:hover {
+  border-color: #b8a8d5;
+}
+
+/* =========================================
+   TEXTO DE AYUDA
+========================================= */
+.operation-help {
+  margin-bottom: 20px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* =========================================
+   BOTONES DE TRANSFERENCIA
+========================================= */
+.app-transferencia .btn-primary {
+  background-color: var(--color-4);
+  color: #374151;
+  transition: all 0.3s ease;
+}
+
+.app-transferencia .btn-primary:hover {
+  background-color: #c9bce0;
+}
+
+.app-transferencia .btn-secondary {
+  background-color: var(--color-3);
+  color: #374151;
+  transition: all 0.3s ease;
+}
+
+.app-transferencia .btn-secondary:hover {
+  background-color: #bcd7e5;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 768px) {
+  .transferencia-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .saldo-disponible {
+    width: 100%;
+  }
+
+  .operaciones-grid {
+    grid-template-columns: 1fr;
+  }
+}

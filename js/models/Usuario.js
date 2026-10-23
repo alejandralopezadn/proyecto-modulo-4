@@ -17,10 +17,8 @@ export class Usuario {
         activo = true,
     }) {
     
-    /* ================================= 
-		    ASIGNAR PROPIEDADES
-	this representa la instancia que estamos creando. 
-	================================= */
+    //ASIGNAR PROPIEDADES
+	//this representa la instancia que estamos creando. 
         this.id = id;
         this.nombre = nombre;
         this.email = email;
